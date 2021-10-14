@@ -1,113 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Yellowtail', cursive; */
 
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
-    --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: calc(var(--footer-height));
-}
-
-section {
-    background-color: var(--color5);
-    width: 1000px;
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    text-align: left;
+    max-width: 900px;
+    margin: auto;
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
+h1 {
+    margin-bottom: 0;
 }
 
 
 h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
+    line-height: 0px;
 }
 
-.gutter-right {
-    margin-right: 20px;
+img {
+    align-self: center;
 }
 
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
+hr {
+    width: 400px;
+    height: 1px;
+    margin-top: 20px;
 }
 
-header img {
-    height: var(--header-height);
-}
-
-p {
-    margin: var(--gutter);
-}
-  
 footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
+    text-align: center;
+    color: rgb(122, 122, 122);
 }
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
 
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
+input {
+    vertical-align: middle;
+}
 
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+input[type=checkbox]:checked {
+    text-decoration: line-through;
+}
 
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
+/* CLASSES */
 
-  }
+.divider {
+    width: 100%;
+    height: 1rem;
+    background-image: url(../assets/hr-img.png);
+}
+
+/* ID */
+
+#logo-top {
+    align-self: center;
+}
+
+#heading {
+    align-items: left;
+    flex-grow: 2;
+    padding: 0 0 10px 5px;
+    margin: 0;
+}
+
+#heading > h1 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 2rem;
+    margin-bottom: 0;
+    line-height: 25px;
+}
+
+#heading > p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+#title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+}
+
+#date-print-bar {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 0.7rem;
+}
+
+#print-button > button {
+    align-self: center;
+}
+
+#posted-date {
+    margin: 0;
+    color: rgb(122, 122, 122);
+}
+
+#print {
+    background-color: transparent;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.7rem;
+    color: rgb(122, 122, 122);
+}
+
+#blog {
+    text-indent: 2rem;
+    color: rgb(95, 95, 95);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+
+#recipe {
+    background-image: url(../assets/list-bg.png);
+    height: 305px;
+    display: flex;
+    align-items: top;
+    font-size: 23px;
+    justify-content: space-evenly;
+    padding: 30px;
+    font-family: 'Patrick Hand', cursive;
+    color: rgb(95, 95, 95);
+}
+
+#blogger {
+    flex-grow: 2;
+    margin-left: 10px;
+}
+
+#van {
+    display: flex;
+    align-items: left;
+    font-size: large;
+    justify-content: top;
+    justify-content: space-between;
+}
+
+#share {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: peru;
+    border: none;
+    font-size: larger;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#footer-break {
+    display: flex;
+}
+
+input[type=checkbox]:checked + label {
+    opacity: 0.5;
+    text-decoration: line-through;
+    
+}
+
+.label input:checked~.checkmark {
+    text-decoration: line-through;
+}
