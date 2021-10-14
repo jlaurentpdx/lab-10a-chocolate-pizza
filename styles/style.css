@@ -1,0 +1,21 @@
+body {
+    text-align: left;
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#heading {
+    line-height: 0px;
+    align-items: left;
+}
+
+#social {
+
+}
