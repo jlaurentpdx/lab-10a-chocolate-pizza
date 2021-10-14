@@ -16,9 +16,35 @@ h1 {
     margin-bottom: 0;
 }
 
+h2 {
+    line-height: 0px;
+}
 
 img {
     align-self: center;
+}
+
+#van {
+    display: flex;
+    /* line-height: 10px; */
+    align-items: left;
+    font-size: large;
+    justify-content: top;
+    justify-content: space-between;
+}
+
+#blogger {
+    flex-grow: 2;
+}
+
+#footer-break {
+    display: flex;
+}
+
+hr {
+    width: 400px;
+    height: 1px;
+    margin-top: 20px;
 }
 
 #blog {
@@ -36,7 +62,7 @@ img {
 }
 
 #print-button {
-    align-self: center;
+    align-self: top;
 }
 
 #subtitle-print-bar {
@@ -45,5 +71,16 @@ img {
 }
 
 #subtitle {
-    
+    margin-top: 0px;
+}
+
+#recipe {
+    background-image: url(../assets/list-bg.png);
+    height: 305px;
+    display: flex;
+    align-items: top;
+    font-size: 28px;
+    justify-content: space-evenly;
+    padding: 30px;
+
 }
